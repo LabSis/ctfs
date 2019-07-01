@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gran rifa 2019</title>
+    <link href="{% static 'mass_assingnment/css/bootstrap.min.css' %}" type="text/css" rel="stylesheet"/>
+    <link href="{% static 'mass_assingnment/css/login.css' %}" type="text/css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="{% static 'mass_assingnment/images/favicon.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'mass_assingnment/images/favicon.ico' %}" type="image/x-icon">
+</head>
+<body class="text-center">
+<form class="form-signin" action="#" method="POST">
+    <img class="mb-4" src="{% static 'mass_assingnment/images/granrifa2019_2.png' %}" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">Iniciar sesión</h1>
+    <label for="txt-username" class="sr-only">Email address</label>
+    <input type="text" id="txt-username" name="txt-username" class="form-control" placeholder="Nombre de usuario"
+           required autofocus>
+    <label for="txt-password" class="sr-only">Password</label>
+    <input type="password" id="txt-password" name="txt-password" class="form-control" placeholder="Clave" required>
+    {% if mensaje %}<p>{{ mensaje }}</p>{% endif %}
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
+
+    <p class="mt-5 mb-3 text-muted">&copy; 2019</p>
+</form>
+
+<script src="{% static 'mass_assingnment/js/lib/jquery-3.2.1.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'mass_assingnment/js/lib/tether.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'mass_assingnment/js/lib/bootstrap.min.js' %}" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es-ar">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='{% static "principal/css/estilo.css" %}' rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href='{% static "principal/css/lib/ionicons-2.0.1/css/ionicons.min.css" %}' rel="stylesheet"/>
+    <link rel="stylesheet" href='{% static "principal/css/lib/footer/footer-distributed.css" %}'/>
+    <link rel="stylesheet" href='{% static "principal/css/colores.css" %}'/>
+    {% block inclusion_css %}{% endblock %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <script src="{% static "principal/js/base.js" %}"></script>
+    {% block inclusion_js %}{% endblock %}
+    <title>
+        Escalamiento de privilegios
+    </title>
+</head>
+<body>
+<header>
+    {% block cabecera %}
+        <nav class="navbar navbar-default" id="navbar-cabecera">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#navbar-collapse-menu-superior" aria-expanded="false">
+                            <span class="sr-only">
+                                Abrir/cerrar menú principal
+                            </span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="">
+                        <img src="https://bsidescordoba.org/assets/images/logo.png"/>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse-menu-superior">
+                    <ul class="nav navbar-nav navbar-right">
+                        {% if perfil is None %}
+                            <li>
+                                <a href="#" class="btn-iniciar-sesion">
+                                    Ingresar
+                                </a>
+                            </li>
+                        {% elif perfil == "normal" or perfil == "administrador" %}
+                            <li class="dropdown" style="color: white">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   id="btn-menu-princial-cabecera"
+                                   aria-haspopup="true"
+                                   aria-expanded="true" style="color:white">
+                                    <i class="icon ion-navicon-round icono-menu-principal hidden-xs"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="{{ clase_menu }}">
+                                        <a href="{% url 'principal:perfil_tmpl' %}">Perfil</a>
+                                    </li>
+                                    <li class="{{ clase_menu }}">
+                                        <a href="{% url 'principal:multas_pagadas_tmpl' %}">Ver multas pagadas</a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li class="{{ clase_menu }}">
+                                        <a href="#" id="btn-cerrar-sesion">Cerrar sesión</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    {% endblock cabecera %}
+</header>
+<main>
+    {% block contenido %}
+    {% endblock contenido %}
+    <!-- modales -->
+    {% block modales %}
+    {% endblock modales %}
+    <!-- /modales -->
+</main>
+<footer class="footer-distributed">
+    <div class="footer-left">
+        <p class="footer-links">
+            <a href="">Inicio</a>
+            ·
+            <a href="#">FAQ</a>
+            ·
+            <a href="">Contacto</a>
+        </p>
+    </div>
+</footer>
+</body>
+</html>

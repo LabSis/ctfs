@@ -1,0 +1,56 @@
+[
+  {
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+      "name": "administrador",
+      "permissions": []
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 2,
+    "fields": {
+      "name": "normal",
+      "permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$30000$cVFg7fSg6YmY$hm9xUitmScJR1TRNbC7mBTRkey07TDAG9vW6LCjKPz8=",
+      "last_login": "2018-05-03",
+      "is_superuser": false,
+      "username": "ignacio_123@yopmail.com",
+      "first_name": "Ignacio",
+      "last_name": "Bertrán",
+      "email": "ignacio_123@yopmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$JIYOKDzF0wd9$m0gnyArsJ2XNP/7iY7x7UuYPIhWbVWL+fEabt3tINk0=",
+      "last_login": "2018-05-03",
+      "is_superuser": false,
+      "username": "administrador_multas@yopmail.com",
+      "first_name": "Admin",
+      "last_name": "Admin",
+      "email": "administrador_multas@yopmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "groups": [
+        1
+      ],
+      "user_permissions": []
+    }
+  }
+]

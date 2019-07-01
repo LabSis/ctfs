@@ -1,0 +1,114 @@
+[
+  {
+    "model": "mensajeria.numerorifa",
+    "pk": 1,
+    "fields": {
+      "numero": 451,
+      "vendedor": "Guido van Rossum",
+      "comprador": "Dennis Ritchie",
+      "esta_pago": false
+    }
+  },
+  {
+    "model": "mensajeria.numerorifa",
+    "pk": 2,
+    "fields": {
+      "numero": 452,
+      "vendedor": "Guido van Rossum",
+      "comprador": "James Gosling",
+      "esta_pago": false
+    }
+  },
+  {
+    "model": "mensajeria.numerorifa",
+    "pk": 3,
+    "fields": {
+      "numero": 453,
+      "vendedor": "Guido van Rossum",
+      "comprador": "Brendan Eich",
+      "esta_pago": false
+    }
+  },
+  {
+    "model": "mensajeria.numerorifa",
+    "pk": 4,
+    "fields": {
+      "numero": 454,
+      "vendedor": "Guido van Rossum",
+      "comprador": "John Backus",
+      "esta_pago": false
+    }
+  },
+  {
+    "model": "mensajeria.numerorifa",
+    "pk": 5,
+    "fields": {
+      "numero": 455,
+      "vendedor": "Guido van Rossum",
+      "comprador": "Grace Hopper",
+      "esta_pago": false
+    }
+  },
+  {
+    "model": "mensajeria.numerorifa",
+    "pk": 6,
+    "fields": {
+      "numero": 456,
+      "vendedor": "Guido van Rossum",
+      "comprador": "Niklaus Wirth",
+      "esta_pago": false
+    }
+  },
+  {
+    "model": "mensajeria.numerorifa",
+    "pk": 7,
+    "fields": {
+      "numero": 457,
+      "vendedor": "Guido van Rossum",
+      "comprador": "Rasmus Lerdorf",
+      "esta_pago": false
+    }
+  },
+  {
+    "model": "mensajeria.numerorifa",
+    "pk": 8,
+    "fields": {
+      "numero": 458,
+      "vendedor": "Guido van Rossum",
+      "comprador": "Larry Wall",
+      "esta_pago": false
+    }
+  },
+  {
+    "model": "mensajeria.persona",
+    "pk": 1,
+    "fields": {
+      "nombre_usuario": "alfredo",
+      "clave": "1cf93c5103f245e2052186280a7331e6"
+    }
+  },
+  {
+    "model": "mensajeria.persona",
+    "pk": 2,
+    "fields": {
+      "nombre_usuario": "matias",
+      "clave": "df31759540dc28f75a20f443a19b1148"
+    }
+  },
+  {
+    "model": "mensajeria.persona",
+    "pk": 3,
+    "fields": {
+      "nombre_usuario": "angela",
+      "clave": "398599fb8a882974cc0a4128803e51bd"
+    }
+  },
+  {
+    "model": "mensajeria.persona",
+    "pk": 4,
+    "fields": {
+      "nombre_usuario": "eugenia",
+      "clave": "7173394d7d978294f7ffdb4108d3e8dd"
+    }
+  }
+]

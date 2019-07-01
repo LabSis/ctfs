@@ -1,0 +1,45 @@
+{% extends 'principal/base.html' %}
+{% load static %}
+
+{% block inclusion_js %}
+    <script src="{% static "principal/js/perfil.js" %}"></script>
+    <script type="text/javascript" src='/jsonp/?callback=procesarDatos'></script>
+{% endblock %}
+{% block contenido %}
+    <div class="container-fluid">
+        {% if perfil == "administrador" %}
+            [[AQUÍ VA EL HASH GANADOR]]
+        {% endif %}
+        <p>
+            Bienvenido a su perfil de consulta de multas no pagas.
+        </p>
+        <table class="table" id="tbl-multas">
+            <thead>
+                <tr>
+                    <th>Identificador</th>
+                    <th>Fecha y hora</th>
+                    <th>Provincia</th>
+                    <th>Departamento</th>
+                    <th>Ciudad</th>
+                    <th>Motivo</th>
+                    <th>Monto</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <br><br>
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+                <h4>Enviar consulta</h4>
+                <textarea maxlength="900" class="form-control" rows="10" id="txa-comentario"></textarea>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 5px">
+            <div class="col-sm-8">
+                <button type="button" class="btn btn-primary pull-right" id="btn-enviar">Enviar</button>
+            </div>
+        </div>
+    </div>
+{% endblock contenido %}
+{% block modales %}
+{% endblock modales %}

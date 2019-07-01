@@ -1,0 +1,766 @@
+@font-face {
+    font-family: 'Gotham light';
+    src: url('../fonts/gotham/GOTHAM-LIGHT.TTF');
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/gotham/GOTHAM-MEDIUM.TTF');
+}
+
+@font-face {
+    font-family: 'Gotham bold';
+    src: url('../fonts/gotham/GOTHAM-BOLD.TTF');
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
+}
+
+/**:not(.icon){*/
+*:not(.glyphicon):not(.icon) {
+    /*font-family: 'Gotham light', Sans-serif;*/
+    /*font-family: 'Lato', Sans-serif;*/
+    /*font-family: 'Montserrat'*/
+    font-family: Sans-serif;
+}
+
+body {
+    /*    background-image: url('./imagenes/bitmap4.png');
+        background-repeat: repeat;*/
+    background-color: #fff;
+    font-size: 14px !important;
+}
+
+.btn {
+    font-size: 15px;
+}
+
+.btn-xs {
+    font-size: 13px;
+}
+
+.btn-sm, .btn-group-sm > .btn {
+    font-size: 14px !important;
+}
+
+main > div > div > div:not(.modal-content) {
+    /*    background-color: #fff;
+        border-radius: 4px;
+        border:1px solid #F0F0F0;
+        padding: 30px 15px;
+        padding-bottom: 60px;
+        box-shadow: 0px 4px 2px -2px rgba(0,0,0,0.1);*/
+}
+
+.tab-content .tab-pane {
+    padding-top: 20px;
+}
+
+*:not(h1) {
+    /*font-size: 16px!important;*/
+}
+
+main > .container-fluid {
+    padding-top: 20px;
+}
+
+.navbar-nav > li > button {
+    color: #fff !important;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    line-height: 20px;
+    position: relative;
+    display: block;
+    padding: 15px;
+    background-color: transparent;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+.navbar-nav > li > button:hover {
+    background-color: transparent;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+    background-repeat: repeat-x;
+    outline: none;
+}
+
+#navbar-cabecera .navbar-brand {
+    padding: 2px 10px;
+}
+
+#navbar-cabecera .navbar-brand span {
+    font-family: 'Gotham' !important;
+    float: left;
+    padding-left: 5px;
+    /*padding-top: 12.5px;*/
+    padding-top: 4px;
+    line-height: 18px;
+}
+
+#navbar-cabecera .navbar-brand img {
+    width: 100px;
+    height: 45px;
+    float: left;
+}
+
+#navbar-cabecera.navbar {
+    /*background: #008d92;*/
+    border: none;
+}
+
+#navbar-cabecera.navbar a {
+    /*color: #fff;*/
+}
+
+#modal-login .modal-dialog {
+    max-width: 420px !important;
+}
+
+#modal-login #btn-iniciar-sesion-modal {
+    height: 40px !important;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.input-group-addon i.icon {
+    font-size: 16px;
+}
+
+.form-group .input-group-addon {
+    min-width: 40px !important;
+}
+
+a.btn-link {
+    text-shadow: none;
+}
+
+.modal-condensed .modal-body {
+    padding: 15px;
+}
+
+.modal-condensed .modal-body > *:last-child {
+    margin-bottom: 0px;
+}
+
+.modal-condensed .modal-footer {
+    padding: 10px 15px;
+}
+
+/* Se elimina el padding-right del scroll */
+body.modal-open {
+    overflow: inherit;
+    padding-right: inherit !important;
+}
+
+.alert.condensed {
+    padding: 10px;
+}
+
+.alert-dismissable.condensed .close, .alert-dismissible.condensed .close {
+    right: 0px;
+}
+
+.alert.light .close {
+    opacity: 0.4;
+}
+
+.alert-info.light {
+    border-color: #EBF5FA;
+    background-color: #fff;
+}
+
+body {
+    position: relative;
+}
+
+.preloader-backdrop {
+    z-index: 100000;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+#preloader-barra-progreso .progress-bar {
+    background-color: #F52F41;
+}
+
+.preloader-backdrop .preloader-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%);
+}
+
+.btn-icon:hover {
+    cursor: pointer;
+}
+
+.titulo-pagina {
+    margin-top: 4px;
+    color: black;
+    font-size: 24px;
+}
+
+main {
+    padding-bottom: 40px;
+}
+
+.clearfixleft {
+    clear: left;
+}
+
+.dropdown-menu.right {
+    left: auto !important;
+    right: 0 !important;
+}
+
+.p.justified {
+    text-align: justify;
+}
+
+.control-label.valor {
+    font-weight: normal;
+}
+
+.panel.has-collapse .panel-heading {
+    padding: 0px;
+}
+
+.panel.has-collapse .panel-heading .panel-title > a[data-toggle="collapse"] {
+    padding: 10px 15px !important;
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    height: 34px;
+}
+
+.panel.has-collapse .panel-heading .panel-title > a[data-toggle="collapse"]:hover {
+    text-decoration: none;
+}
+
+.table.con-acciones tbody tr td {
+    vertical-align: middle;
+}
+
+.table.con-acciones thead th * *:hover, .table.con-acciones thead th *:hover, .table.con-acciones thead th:hover {
+    cursor: default !important;
+}
+
+@media (min-width: 1600px) {
+    .row > .col-xl-offset-2 {
+        margin-left: 16.66666667%;
+    }
+
+    .row > .col-xl-9 {
+        width: 75%;
+    }
+
+    .row > .col-xl-8 {
+        width: 66.66666667%;
+    }
+
+    .row > .col-xl-7 {
+        width: 58.33333333%;
+    }
+
+    .row > .col-xl-6 {
+        width: 50%;
+    }
+
+    .row > .col-xl-5 {
+        width: 41.66666667%;
+    }
+
+    .row > .col-xl-4 {
+        width: 33.33333333%;
+    }
+
+    .row > .col-xl-3 {
+        width: 25%;
+    }
+}
+
+.with-btn-sm {
+    line-height: 30px;
+}
+
+.divider {
+    border-bottom: 1px solid #efefef;
+    margin: 20px 0px;
+}
+
+#menu-notificaciones + .popover {
+    width: 380px;
+}
+
+#menu-notificaciones + .popover .popover-content .list-group-item {
+    padding: 10px;
+}
+
+#menu-notificaciones + .popover .popover-content {
+    padding: 2px;
+}
+
+table td {
+    vertical-align: middle;
+}
+
+.btn-group.group-exclusive .btn.active {
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    outline: none;
+}
+
+.btn-group.group-exclusive .btn.active.btn-default {
+    background-color: #ededed;
+    background-image: none;
+}
+
+.tab-pane {
+    padding-top: 15px;
+}
+
+main {
+    min-height: 70vh;
+}
+
+#navbar-cabecera #btn-nombre-usuario {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#navbar-cabecera #btn-menu-princial-cabecera {
+    text-align: left;
+}
+
+#navbar-cabecera #btn-nombre-usuario .nombre-usuario {
+    float: right;
+    line-height: 40px;
+    padding-right: 10px;
+}
+
+#navbar-cabecera #btn-nombre-usuario .foto-perfil {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid transparent;
+    background-size: 40px auto;
+    background-position: 50% 50%;
+    float: right;
+}
+
+#navbar-cabecera .navbar-nav > li > .dropdown-menu {
+    min-width: 100%;
+}
+
+#navbar-cabecera .navbar-brand {
+
+}
+
+strong, .bold {
+    font-family: 'Gotham bold';
+    font-weight: bold;
+}
+
+.textarea {
+    resize: vertical;
+    max-height: 60vh;
+}
+
+.contenedor-botones-acciones.float::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.contenedor-botones-acciones.float.right .btn {
+    float: right;
+}
+
+.contenedor-botones-acciones.float.right .btn:not(:first-child) {
+    /*margin-right: 4px;*/
+}
+
+.contenedor-botones-acciones.float.left .btn {
+    float: left;
+}
+
+.contenedor-botones-acciones.float.left .btn:not(:first-child) {
+    margin-left: 4px;
+}
+
+.btn-seleccionar-imagen:not(.disabled):hover img {
+    box-shadow: 0px 0px 6px #f68c9d;
+    border-color: #ed193a;
+}
+
+.btn-seleccionar-imagen:not(.disabled):hover {
+    cursor: pointer;
+}
+
+#navbar-cabecera.navbar li a {
+    transition: background-color .3s;
+}
+
+/*#menu-pacientes-sala-espera{
+    padding: 15px;
+}*/
+.menu-pacientes-sala-espera.activo > span {
+    border: 1px solid #D90D2D;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0.01) 20%, rgba(0, 0, 0, 0.0) 100%);
+    color: #ed193a;
+    animation-name: titilar;
+    animation-duration: .6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#menu-notificaciones .badge {
+    color: #fff !important;
+    background-color: #D90D2D !important;
+}
+
+@keyframes titilar {
+    from {
+        box-shadow: 0px 0px 10px 0px #fff;
+    }
+    to {
+        box-shadow: 0px 0px 0px 0px #fff;
+    }
+}
+
+.alerta-sala-espera {
+    animation-name: titilar-sala-espera;
+    animation-duration: .6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin-left: 5px !important;
+    font-size: 15px !important;
+}
+
+#lista-notificaciones .item-notificacion {
+    padding: 5px !important;
+}
+
+#lista-notificaciones {
+    margin-bottom: 0px;
+}
+
+#lista-notificaciones .item-notificacion p {
+    margin-bottom: 0px;
+}
+
+#lista-notificaciones .item-notificacion.no-vista {
+    background-color: #FFF5F7;
+}
+
+#lista-notificaciones .item-notificacion.no-vista > * {
+    text-shadow: 0px 1px 0px #fff;
+}
+
+footer {
+    box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+#feedback-global-button {
+    right: auto !important;
+    left: -35px;
+}
+
+.alert-no-background {
+    background-color: transparent !important;
+}
+
+label.sin-estilo {
+    font-weight: normal;
+    margin: 0px !important;
+}
+
+.contenedor-estado-usuario .estado .globo {
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    background-color: #C4C4C4;
+    display: inline-block;
+}
+
+.contenedor-estado-usuario .estado.conectado .globo {
+    background-color: #7AC953;
+}
+
+.contenedor-estado-usuario .estado.desconectado .globo {
+    background-color: #EB6370;
+}
+
+.contenedor-estado-medico .estado > *:not(.clearfix) {
+    float: left;
+}
+
+.contenedor-estado-medico .estado .globo {
+    margin-right: 5px;
+    margin-left: 3px;
+    position: relative;
+    top: 3px;
+}
+
+.contenedor-estado-medico .estado {
+    border: #DEDEDE 1px solid;
+    border-radius: 100px;
+    padding: 5px;
+    min-width: 120px;
+}
+
+.contenedor-estado-medico .label-estado {
+    line-height: 32px;
+    margin-right: 10px;
+}
+
+.form-control-inline {
+    display: inline !important;
+}
+
+/* Estilo para tabla con paginación */
+.bootgrid-table {
+    margin-bottom: 10px !important;
+}
+
+.bootgrid-footer {
+    margin-top: 0px !important;
+}
+
+.bootgrid-footer ul.pagination a {
+    padding: 4px 10px;
+}
+
+.bootgrid-footer ul.pagination li:hover {
+    cursor: pointer;
+}
+
+.bootgrid-footer .infos {
+    font-size: 14px;
+}
+
+.bootgrid-footer .infoBar, .bootgrid-header .actionBar {
+    text-align: right;
+}
+
+.bootgrid-footer .pagination {
+    margin: 0;
+}
+
+/* Estilo para los botones de la tabla con paginación */
+.bootgrid-table.acciones-sin-texto .contenedor-botones-acciones a span {
+    display: none;
+}
+
+.bootgrid-table .contenedor-botones-acciones button:not(:first-child) {
+    margin-top: 7px;
+}
+
+.bootgrid-table .contenedor-botones-acciones {
+    max-width: 180px;
+    text-align: right;
+}
+
+.bootgrid-table .contenedor-botones-acciones button {
+    width: 100%;
+    max-width: 160px;
+    min-width: 60px;
+    white-space: normal;
+    font-size: 13px;
+}
+
+.bootgrid-table .contenedor-botones-acciones button i {
+    position: relative;
+    float: right;
+    font-size: 16px;
+    right: 2px;
+}
+
+@media (max-width: 425px) {
+    .bootgrid-table .contenedor-botones-acciones button {
+        padding-left: 8px;
+        padding-right: 8px;
+        max-width: 30px !important;
+        min-width: 30px !important;
+        text-align: center;
+    }
+
+    .bootgrid-table .contenedor-botones-acciones button i {
+        position: static;
+    }
+
+    /* Este selector es un parche para que el footer de las grillas se vea bien en las
+    pantallas responsivas. El problema lo tiene la librería bootgrid.*/
+    .bootgrid-footer div.col-sm-6:nth-child(1) {
+        float: left !important;
+    }
+
+    #tabla-mensajes-nuevos tr th:nth-child(1) {
+        display: none;
+    }
+
+    #tabla-mensajes-nuevos tr th:nth-child(1) {
+        display: none;
+    }
+}
+
+.bootgrid-table thead tr th span {
+    white-space: normal !important;
+    display: block !important;
+    overflow: visible !important;
+    margin: 0 !important;
+}
+
+.bootgrid-table tbody tr td {
+    white-space: normal !important;
+    overflow: visible !important;
+    word-break: break-word;
+}
+
+/* Clases útiles */
+.margin-top {
+    margin-top: 8px !important;
+}
+
+.margin-bottom {
+    margin-bottom: 8px !important;
+}
+
+.margin-left {
+    margin-left: 8px !important;
+}
+
+.margin-right {
+    margin-right: 8px !important;
+}
+
+.lot-of-margin-top {
+    margin-top: 40px !important;
+}
+
+.lot-of-margin-bottom {
+    margin-bottom: 40px !important;
+}
+
+.lot-of-margin-left {
+    margin-left: 40px !important;
+}
+
+.lot-of-margin-right {
+    margin-right: 40px !important;
+}
+
+.btn-transparente {
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.textarea-lectura {
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    background-color: #EDEDED;
+    padding: 10px;
+}
+
+label[for='fil-foto'] {
+    display: block;
+}
+
+#img-foto {
+    min-width: 100%;
+}
+
+.icono-menu-principal {
+    font-size: 20px;
+}
+
+.ql-toolbar.sm {
+    font-size: 14px;
+    padding: 2px !important;
+}
+
+.ql-toolbar.sm svg {
+    width: 14px;
+}
+
+.elemento-inline-sm {
+    display: none;
+}
+
+.link-archivo {
+    margin: 5px;
+    display: inline-block;
+}
+
+.contenedor-links-archivos {
+    width: 100%;
+}
+
+.resaltado {
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.datepicker {
+    position: relative;
+}
+
+@media (max-width: 425px) {
+    .footer-distributed p {
+        font-size: 12px !important;
+    }
+
+    .bootgrid-table thead tr th span {
+        font-size: 13px;
+    }
+
+    .bootgrid-table tbody tr td {
+        font-size: 13px;
+        word-break: keep-all;
+    }
+}
+
+.bootgrid-table .contenedor-botones-acciones .ion-ios-telephone, .btn-cortar .ion-ios-telephone {
+    transform: rotate(135deg);
+    display: inline-block;
+    margin-right: 2px;
+}
+
+.sin-dato {
+    font-style: italic;
+}
+
+.rotar-cargando {
+    display: inline-block;
+    animation: rotar-cargando 2s linear infinite;
+}
+
+@keyframes rotar-cargando {
+    from {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

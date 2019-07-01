@@ -1,0 +1,32 @@
+{% extends 'principal/base.html' %}
+{% load static %}
+
+{% block inclusion_js %}
+    <script src="{% static "principal/js/consultar_multas_pagadas.js" %}"></script>
+{% endblock %}
+{% block contenido %}
+    <div class="container-fluid">
+        {% if perfil == "administrador" %}
+            [[AQUÍ VA EL HASH GANADOR]]
+        {% endif %}
+        <p>
+            Consultar multas pagadas.
+        </p>
+        <table class="table" id="tbl-multas-pagadas">
+            <thead>
+                <tr>
+                    <th>Identificador</th>
+                    <th>Fecha y hora</th>
+                    <th>Provincia</th>
+                    <th>Departamento</th>
+                    <th>Ciudad</th>
+                    <th>Motivo</th>
+                    <th>Monto</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+{% endblock contenido %}
+{% block modales %}
+{% endblock modales %}
